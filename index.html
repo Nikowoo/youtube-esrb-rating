@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube ESRB Rating</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube ESRB Rating</h1>
+        <form id="youtube-form">
+            <input type="url" id="youtube-url" placeholder="Enter YouTube URL" required>
+            <button type="submit">Get Rating</button>
+        </form>
+        <div id="error" class="error"></div>
+        <div id="result" class="result" style="display: none;">
+            <h2>Rated Thumbnail:</h2>
+            <div class="thumbnail">
+                <img id="thumbnail-img" src="" alt="YouTube Thumbnail">
+                <img id="rating-icon" class="rating-icon" src="" alt="ESRB Rating">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
